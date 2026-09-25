@@ -37,9 +37,9 @@ Außerdem: helles und dunkles Farbschema, Bedienung per Tastatur, für Smartphon
 
 ## Veröffentlichen mit GitHub Pages
 
-1. Alle Dateien dieses Ordners in das Repository `website` legen – zum Beispiel auf github.com über *Add file → Upload files* den Inhalt des ZIP-Archivs hineinziehen und *Commit changes* klicken. `index.html` muss im obersten Ordner des Repositorys liegen.
+1. `index.html` muss im obersten Ordner des Repositorys liegen (ist hier bereits so).
 2. Im Repository *Settings → Pages* öffnen, unter *Build and deployment* als *Source* „Deploy from a branch“ wählen, Branch `main` und Ordner `/ (root)` einstellen, *Save*.
-3. Nach ein bis zwei Minuten ist die Seite unter `https://<benutzername>.github.io/website/` erreichbar.
+3. Nach ein bis zwei Minuten ist die Seite unter `https://germanclaude.github.io/Website2politik2go/` erreichbar.
 
 Zum Ausprobieren ohne Internet genügt ein Doppelklick auf `index.html`.
 
