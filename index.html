@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prüfstand</title>
+<meta name="description" content="Neutraler Parteien-Test, Staatskunde mit Grundgesetz, Gesetzen, Lerneinheiten und Test, dazu IQ-Test, Reaktions-, Gedächtnis- und Konzentrationstest. Werbefrei, ohne Anmeldung, ohne Tracking.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=JSON.parse(localStorage.getItem('pruefstand:theme'));if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<button class="skip" type="button" data-skip>Zum Inhalt springen</button>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#start" aria-label="Prüfstand – Startseite">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 10.5l11 11M21.5 10.5l-11 11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span>Prüfstand</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-menu>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Menü
+    </button>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <a href="#wahl" data-nav="wahl">Parteien-Test</a>
+      <a href="#staat" data-nav="staat">Staat &amp; Recht</a>
+      <a href="#iq" data-nav="iq">IQ-Test</a>
+      <a href="#tests" data-nav="tests">Weitere Tests</a>
+      <a href="#ueber" data-nav="ueber">Über</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+  <noscript><p class="panel">Diese Website benötigt JavaScript. Bitte aktivieren Sie JavaScript in Ihrem Browser.</p></noscript>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <h2>Prüfstand</h2>
+      <p>Tests und Wissen zu Politik, Staat und Denkvermögen. Unabhängig, werbefrei, ohne Anmeldung und ohne Tracking. Antworten werden nur in Ihrem Browser gespeichert.</p>
+      <p class="tiny" style="margin-top:10px">Stand der Inhalte: <span data-stand></span></p>
+    </div>
+    <div>
+      <h2>Tests</h2>
+      <ul>
+        <li><a href="#wahl">Parteien-Test</a></li>
+        <li><a href="#staat-test">Staatskunde-Test</a></li>
+        <li><a href="#iq">IQ-Test</a></li>
+        <li><a href="#tests">Reaktion, Gedächtnis, Konzentration</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Staat &amp; Recht</h2>
+      <ul>
+        <li><a href="#staat-aufbau">Staatsaufbau</a></li>
+        <li><a href="#staat-organe">Verfassungsorgane</a></li>
+        <li><a href="#staat-grundgesetz">Grundgesetz</a></li>
+        <li><a href="#staat-gesetze">Gesetze A–Z</a></li>
+        <li><a href="#staat-lernen">Lerneinheiten</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Info</h2>
+      <ul>
+        <li><a href="#ueber">Über die Seite</a></li>
+        <li><a href="#ueber.methodik">Methodik Parteien-Test</a></li>
+        <li><a href="#ueber.quellen">Quellen</a></li>
+        <li><a href="#ueber.datenschutz">Datenschutz</a></li>
+        <li><a href="#ueber.darstellung">Hell / Dunkel</a></li>
+        <li><a href="#ueber.impressum">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+
+<script src="assets/js/data/wahl.js"></script>
+<script src="assets/js/data/staat.js"></script>
+<script src="assets/js/data/lernen.js"></script>
+<script src="assets/js/data/quiz.js"></script>
+<script src="assets/js/data/grundgesetz.js"></script>
+<script src="assets/js/data/gesetze.js"></script>
+<script src="assets/js/data/iq.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/views/start.js"></script>
+<script src="assets/js/views/wahl.js"></script>
+<script src="assets/js/views/staat.js"></script>
+<script src="assets/js/views/iq.js"></script>
+<script src="assets/js/views/tests.js"></script>
+<script src="assets/js/views/ueber.js"></script>
+<script>PS.start();</script>
+</body>
+</html>
